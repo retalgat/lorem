@@ -1,0 +1,16 @@
+/* Input */
+
+.input {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 10px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, .85);
+    border-radius: 3px;
+    font-size: 18px;
+    color: var(--color-back);
+
+    &::placeholder {
+        color: var(--color-back);
+    }
+}

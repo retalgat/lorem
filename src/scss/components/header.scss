@@ -1,0 +1,58 @@
+/* Header */
+
+.header {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding-block: 16px;
+    background-color: rgba($color: #10101d, $alpha: 0.9);
+
+    @media (min-width: 768px) {
+        height: 100px;
+    }
+}
+
+/* Logo */
+
+.header__logo {
+    @media (max-width: 767px) {
+        width: auto;
+        height: 18px;
+    }
+}
+
+/* Button */
+
+.header__button {
+    --color-back: transparent;
+
+    padding: 5px;
+    fill: var(--color-white);
+
+    &[aria-expanded=true] {
+        .header__icon--close {
+            display: block;
+        }
+    }
+
+    &[aria-expanded=false] {
+        .header__icon--menu {
+            display: block;
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+/* Icon */
+
+.header__icon {
+    display: none;
+}

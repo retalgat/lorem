@@ -1,0 +1,17 @@
+/* Container */
+
+@include b(container) {
+    @media (max-width: 767px) {
+        padding-inline: 20px;
+    }
+
+    @media (min-width: 768px) {
+        padding-inline: 40px;
+    }
+
+    @media (min-width: 1252px) {
+        padding-inline: calc(
+            (100% - 1172px) / 2
+        );
+    }
+}

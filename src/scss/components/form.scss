@@ -1,0 +1,36 @@
+/* Form */
+
+.form {
+    display: grid;
+    gap: 8px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Button */
+
+.form__button {
+    min-height: 48px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: var(--font-weight-semibold);
+
+    @media (min-width: 768px) {
+        grid-column: 2;
+    }
+}
+
+/* Range */
+
+.form__group--range {
+    @media (max-width: 767px) {
+        padding-block-start: 10px;
+    }
+
+    @media (min-width: 768px) {
+        grid-column: span 2;
+    }
+}

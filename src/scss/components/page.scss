@@ -1,0 +1,28 @@
+/* Page */
+
+.page {
+    height: 100%;
+    background-color: var(--color-back);
+    color: var(--color-white);
+
+    @media (max-width: 767px) {
+        scroll-padding: 64px;
+    }
+
+    @media (min-width: 768px) {
+        scroll-padding: 100px;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Body */
+
+.page__body {
+    height: 100%;
+    margin: 0;
+    font-size: 1rem;
+    font-family: var(--font-family);
+}

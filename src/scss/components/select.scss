@@ -1,0 +1,66 @@
+/* Select */
+
+.select {
+    position: relative;
+    font-size: 18px;
+}
+
+/* Button */
+
+.select__button {
+    position: relative;
+
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 10px;
+    border: 1px solid var(--color-white);
+    background-color: color-mix(in srgb, var(--color-white), transparent 15%);
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--color-back);
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Arrow */
+
+.select__arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+    transform: translateY(-50%);
+    fill: currentColor;
+}
+
+/* Dropdown */
+
+.select__dropdown {
+    position: absolute;
+    display: none;
+    width: 100%;
+    max-height: 230px;
+    background-color: var(--color-back);
+    border: 1px solid #3d4050;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: var(--color-white);
+    overflow: auto;
+}
+
+/* Open */
+
+.select--open {
+    .select__button {
+        background-color: #3d4050;
+        border-color: #3d4050;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        color: var(--color-white);
+    }
+
+    .select__dropdown {
+        display: block;
+    }
+}

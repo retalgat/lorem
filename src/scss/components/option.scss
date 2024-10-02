@@ -1,0 +1,37 @@
+/* Option */
+
+.option {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Button */
+
+.option__button {
+    display: block;
+    padding: 14px 10px 10px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #3d4050
+    }
+
+    &:active {
+        background-color: color-mix(in srgb, #3d4050, var(--color-black) 10%);
+    }
+}
+
+/* Input */
+
+.option__input {
+    appearance: none;
+    @extend .visually-hidden;
+
+    &:checked ~ .option__value {
+        color: var(--color-primary);
+    }
+}

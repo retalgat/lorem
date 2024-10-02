@@ -1,0 +1,36 @@
+/* Button */
+
+.button {
+    --color-back: var(--color-white);
+    --color-border: #6f6d7b;
+    --color-text: #2a2b30;
+
+    display: inline-block;
+    padding: 14px 14px 10px;
+    background-color: var(--color-back);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-text);
+    cursor: pointer;
+
+    &:hover {
+        background-color: color-mix(in srgb, var(--color-back), var(--color-black) 5%);
+    }
+
+    &:active {
+        background-color: color-mix(in srgb, var(--color-back), var(--color-black) 10%);
+    }
+}
+
+/* Primary */
+
+.button--primary {
+    --color-back: var(--color-primary);
+    --color-border: var(--color-white);
+    --color-text: var(--color-white);
+}
