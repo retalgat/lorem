@@ -87,5 +87,6 @@
 /* Icon */
 
 .footer__icon {
+    flex-shrink: 0;
     fill: var(--color-primary);
 }

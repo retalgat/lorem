@@ -3,16 +3,16 @@
 .intro {
     display: flex;
     flex-direction: column;
+    background-color: #f0f4f5;
     background-image: url('/images/intro.webp');
     background-repeat: no-repeat;
-    background-color: #f0f4f5;
+    background-size: cover;
     color: var(--color-black);
 
     @media (max-width: 767px) {
         row-gap: 40px;
         padding-block: 140px 100px;
         background-position: top right 20%;
-        background-size: cover;
     }
 
     @media (min-width: 768px) {
